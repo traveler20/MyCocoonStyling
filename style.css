@@ -24,14 +24,17 @@
 **グローバルメニュー
 ==========================================*/
 /*グローバルメニューの色変更*/
-.navi-in > ul > li:nth-of-type(3n + 1) {
+.navi-in > ul > li:nth-of-type(4n + 1) {
 	border-bottom: ridge 3px #00ad1a;
 }
-.navi-in > ul > li:nth-of-type(3n + 2) {
-	border-bottom: ridge 3px white;
+.navi-in > ul > li:nth-of-type(4n + 2) {
+	border-bottom: ridge 3px yellow;
 }
-.navi-in > ul > li:nth-of-type(3n + 3) {
-	border-bottom: ridge 3px #ff0010;
+.navi-in > ul > li:nth-of-type(4n + 3) {
+	border-bottom: ridge 3px red;
+}
+.navi-in > ul > li:nth-of-type(4n + 4) {
+	border-bottom: ridge 3px blue;
 }
 
 /*==========================================
@@ -56,8 +59,8 @@
 .sidebar h3 {
 	background: none;
 	padding: 12px 35px 12px 15px;
-	background-color: #c4ebd9;
-	color: #1b7c26;
+	background-color: #000000;
+	color: #fff;
 	margin-top: 26px;
 }
 .sidebar h3::before {
@@ -76,8 +79,8 @@
 }
 .sidebar h3::after {
 	/*見出し背景色*/
-	background-color: #c4ebd9;
-	border: solid 5px #c4ebd9;
+	background-color: #000000;
+	border: solid 5px #000000;
 	border-radius: 0px;
 	top: 0px;
 	width: 10px;
@@ -117,7 +120,7 @@
 	line-height: 1.6;
 	margin-bottom: 1em;
 	font-size: 0.85rem;
-	color: #1b7c26;
+	color: #000000;
 }
 .sidebar .toc-content > ol > li,
 .sidebar .toc-content > ul > li {
@@ -173,14 +176,14 @@
 		rgba(57, 188, 128, 0.3) 100%
 	);
 	border-radius: 200px 200px 0px 0px / 100px 100px 0px 0px;
-	color: #fff;
+	color: #000;
 	padding: 20px;
 	width: 110%;
 	margin-left: -5% !important;
 }
 .sidebar .author-box .author-name a {
 	/*profile名前の色変更*/
-	color: #1b7c26;
+	color: #000;
 	text-decoration: none;
 	letter-spacing: 1px;
 	font-size: 18px;
@@ -237,7 +240,7 @@
 	line-height: 45px;
 	font-size: 30px;
 	/*SNSボタン影の色変更*/
-	box-shadow: 0 0 10px rgba(66, 172, 231, 0.5), 0 0 5px -5px rgba(66, 172, 231);
+	/* box-shadow: 0 0 10px rgba(66, 172, 231, 0.5), 0 0 5px -5px rgba(66, 172, 231); */
 	background: #fff;
 }
 .sidebar .author-box .sns-follow-buttons a:hover {
@@ -262,7 +265,7 @@
 	text-align: center;
 	text-decoration: none;
 	/*profileアイコンの色変更*/
-	color: #1b7c26;
+	color: #000000;
 	/*影の色変更*/
 	box-shadow: 0 0 10px rgba(27, 124, 38, 0.3), 0 0 5px -5px rgba(27, 124, 38);
 	top: 105px;
@@ -326,17 +329,18 @@
 ==========================================*/
 /*本文見出しh2の変更*/
 .article h2 {
-	background-image: repeating-linear-gradient(
+	/* background-image: repeating-linear-gradient(
 		90deg,
-		rgba(27, 124, 38, 0.3) 0%,
-		rgba(27, 124, 38, 0.3) 50%,
-		rgba(57, 188, 128, 0.3) 50%,
-		rgba(90, 148, 122, 0.3) 100%
-	);
-	color: black;
+		rgb(27, 124, 38) 0%,
+		rgb(27, 124, 38) 50%,
+		rgb(27, 124, 38) 50%,
+		rgb(27, 124, 38) 100%
+	); */
+	background-color: #000000;
+	color: #fff;
 }
 .article h2::before {
-	background: #1b7c26;
+	background: rgb(27, 124, 38);
 }
 .article h2::after {
 	background: #39bc80;
@@ -344,22 +348,23 @@
 
 /*本文見出しh3の変更*/
 .article h3 {
-	border: 2px solid rgba(27, 124, 38, 0.8);
+	border: 2px solid #000000;
+	color: black;
 }
 .article h3::before {
-	background-color: #1b7c26;
+	background-color: #000000;
 }
 .article h3::after {
-	background-color: #1b7c26;
+	background-color: #000000;
 }
 
 /*本文見出しh4の変更*/
 .article h4 {
-	border-bottom: 1px solid rgba(0, 134, 171, 0.6);
+	border-bottom: 1px solid rgb(27, 124, 38);
 }
 
 .article h4::before {
-	background-color: #1b7c26;
+	background-color: #000000;
 }
 
 .article h4::after {
@@ -387,18 +392,157 @@
 **本文目次の色変更
 ==========================================*/
 .toc-title {
-	color: #d3d3d3;
-	background-color: rgba(27, 124, 38, 0.3);
+	color: #fff;
+	background-color: #000;
 }
 .toc-content {
-	color: #043e0d;
-	border: 2px solid rgba(27, 124, 38, 0.3);
+	color: #000;
+	border: 2px solid #000;
 }
 
 /*==========================================
 **トップページ
 ==========================================*/
-/*トップページのタブ背景色変更*/
+
+
+.page .entry-title{
+  display: none;
+}
+
+
+/************************************
+** トップページカスタマイズ
+************************************/
+.home #main h1{
+    font-size: 1em;
+    color: #555;
+    letter-spacing: 1px;
+    margin: 1em 0 -2em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.home #main h1:before, .home #main h1:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: #aaa;
+    display: block;
+}
+.home #main h1:before {
+    margin-right: .4em;
+}
+.home #main h1:after {
+    margin-left: .4em;
+}
+.home #main .large-thumb{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0.8em 0;
+}
+.home #main .large-thumb a{
+    width: 50%;
+    padding: 10px;
+}
+.home #main .large-thumb a:hover{
+    background:unset;
+}
+.home #main .widget-entry-cards .e-card {
+    font-size: 18px;
+    box-shadow: 0 0 4px rgba(0,0,0,.15);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height:100%;
+}
+.home #main .widget-entry-cards .e-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 18px 3px rgba(0,0,0,.08);
+}
+.home #main .widget-entry-cards figure {
+    float: none;
+    width: 100%;
+}
+.home #main .widget-entry-cards figure img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 210px;
+}
+.home #main .widget-entry-cards .card-content {
+    margin: 0 0 0.5em;
+    padding:10px 15px;
+    background:#fff;
+}
+.home #main .large-thumb .new-entry-card-title,.home #main .large-thumb .popular-entry-card-title {
+    font-size: 0.9em;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #555;
+    margin-top: 3px;
+}
+/*(スマホ)480px以下*/
+@media screen and (max-width: 480px){
+    .home #main h1{
+        margin: 1em 0 0;
+        padding: 0;
+        font-size:0.8em;
+    }
+    .home #main .widget-entry-cards .e-card {
+        margin:0 5px;
+    }
+    .home #main .large-thumb a {
+        width: 100%;
+        padding: 0;
+        margin:0 0 15px;
+    }
+    .home .mobile-2{
+        justify-content:space-between;
+    }
+    .home .mobile-2 a{
+        width:48% !important;
+    }
+    .home .mobile-2 figure img {
+        object-fit: unset !important;
+        height: auto !important;
+    }
+    .home #main .large-thumb .new-entry-card-title{
+        line-height:1.3;
+    }
+}
+/***********************************
+** ボタン
+***********************************/
+.p-button {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.p-button a {
+    display: block;
+    margin:25px 0;
+    padding: 0.8em 1em;
+    border-radius: 2em;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    background: #eba02f;
+    box-shadow: 0 5px 20px rgba(235, 160, 47, .5);
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity:1;
+}
+.p-button a:hover{
+    box-shadow:none;
+    transform: translateY(3px);
+    opacity:1;
+}
+/***********************************
+**トップページのタブ背景色変更
+***********************************/
 #index-tab-1:checked ~ .index-tab-buttons .index-tab-button[for="index-tab-1"],
 #index-tab-2:checked ~ .index-tab-buttons .index-tab-button[for="index-tab-2"],
 #index-tab-3:checked ~ .index-tab-buttons .index-tab-button[for="index-tab-3"],
@@ -410,15 +554,17 @@
 		#39bc80 50%,
 		#39bc80 100%
 	);
-	border: 1px solid #1b7c26;
-	color: #1b7c26;
+	border: 1px solid #000000;
+	color: #000000;
 }
 .index-tab-buttons .index-tab-button {
-	border-color: #1b7c26;
-	color: #1b7c26;
+	border-color: #000000;
+	color: #000000;
 }
 
-/*コメントフォーム*/
+/***********************************
+**コメントフォーム
+***********************************/
 .comment-form-email,
 .comment-form-url,
 .comment-notes {
