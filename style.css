@@ -311,7 +311,7 @@ div.item-label {
 	border-bottom: solid 15px transparent;
 	border-right: solid 20px #222222;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	.article h2 {
 		padding: 0.5em;
 		margin-left: 0px;
