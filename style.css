@@ -1,10 +1,10 @@
 /*
-  Skin Name: モノクロアクセント
-  Description: モノクロを基調としてアクセントの緑を取り入れています。
+  Skin Name: モノクロ
+  Description: モノクロを基調としています。
   Skin URI: https://yurukei-career.com
-  Author: yurukei
+  Author: yurukei20
   Author URI: https://yurukei-career.com
-  Screenshot URI:https://im-cocoon.net/wp-content/uploads/skin-mono-accent.png
+  Screenshot URI:https://im-cocoon.net/wp-content/uploads/skin-mono.png
   Version: 0.0.1
   Priority: 9830001000
 */
@@ -125,7 +125,7 @@ div.item-label {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #94a4a5;
+	background-color: #9da5a0;
 	-webkit-transform-origin: center top;
 	transform-origin: center top;
 	transform: rotateX(90deg);
@@ -156,15 +156,18 @@ div.item-label {
 
 .entry-card-wrap.a-wrap:nth-of-type(3n + 1),
 .related-entry-card-wrap.a-wrap:nth-of-type(3n + 1) {
-	background-color: #e9e9e9;
+	background-color: #fff;
+	border: solid 2px #333333;
 }
 .entry-card-wrap.a-wrap:nth-of-type(3n + 2),
 .related-entry-card-wrap.a-wrap:nth-of-type(3n + 2) {
-	background-color: #e9e9e9;
+	background-color: #fff;
+	border: solid 2px #333333;
 }
 .entry-card-wrap.a-wrap:nth-of-type(3n + 3),
 .related-entry-card-wrap.a-wrap:nth-of-type(3n + 3) {
-	background-color: #e9e9e9;
+	background-color: #fff;
+	border: solid 2px #333333;
 }
 
 .entry-card-wrap.a-wrap:nth-of-type(3n + 1):hover,
@@ -225,7 +228,8 @@ div.item-label {
 .blogcard-wrap.a-wrap {
 	border: none;
 	position: relative;
-	background-color: #e9e9e9;
+	background-color: #fff;
+	border: solid 2px #333333;
 }
 
 .blogcard-wrap.a-wrap:after {
@@ -269,27 +273,30 @@ div.item-label {
 }
 
 .prev-post.a-wrap {
-	background-color: #9da5a0;
+	background-color: #fff;
+	border: solid 2px #333333;
 }
 .next-post.a-wrap {
-	background-color: #9da5a0;
+	background-color: #fff;
+	border: solid 2px #333333;
 }
 
 .prev-post.a-wrap:hover {
-	background-color: #9db09f;
+	background-color: #9da5a0;
 }
 .next-post.a-wrap:hover {
-	background-color: #9db09f;
+	background-color: #9da5a0;
 }
 
 /* □■-----------------------------------------------------
 / 『見出し（h2）』
 -----------------------------------------------------■□ */
-/* .article h2 {
+.article h2 {
 	position: relative;
 	padding: 0.8em 0.8em 0.8em 1.8em;
 	background: #333333;
 	color: #e9e9e9;
+	margin-left: -50px;
 	margin-bottom: 30px;
 	font-size: 22px;
 	font-weight: bold;
@@ -303,9 +310,20 @@ div.item-label {
 	border: none;
 	border-bottom: solid 15px transparent;
 	border-right: solid 20px #222222;
-} */
+}
+@media screen and (max-width: 768px) {
+	.article h2 {
+		padding: 0.5em;
+		margin-left: 0px;
+		background: #333333;
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+	}
+	.article h2 ::before {
+		display: none;
+	}
+}
 
-.article h2 {
+/* .article h2 {
 	background-image: repeating-linear-gradient(
 		90deg,
 		#333333 0%,
@@ -346,21 +364,21 @@ div.item-label {
 	width: 15px;
 	height: 15px;
 	background: #9da5a0;
-}
+} */
 
 /* □■-----------------------------------------------------
 / 『見出し（h3）』
 -----------------------------------------------------■□ */
-/* .article h3 {
+.article h3 {
 	position: relative;
 	padding: 0.4em 0.5em;
 	color: #333333;
 	background: #e9e9e9;
-	border-left: solid 5px #1b7c26;
+	border-left: solid 5px #333333;
 	border-bottom: solid 3px #d7d7d7;
-} */
+}
 
-.article h3 {
+/* .article h3 {
 	position: relative;
 	padding: 0.75em 1.5em 0.75em 1.5em;
 	border: 2px solid #333333;
@@ -389,12 +407,12 @@ div.item-label {
 	height: calc(100% - 1em);
 	background-color: #9da5a0;
 	border-radius: 4px;
-}
+} */
 
 /* □■-----------------------------------------------------
 / 『見出し（h4）』
 -----------------------------------------------------■□ */
-/* .article h4 {
+.article h4 {
 	color: #333333;
 	position: relative;
 	padding: 0.5em;
@@ -408,9 +426,9 @@ div.item-label {
 	content: "●";
 	color: #e9e9e9;
 	margin-right: 8px;
-} */
+}
 
-.article h4 {
+/* .article h4 {
 	margin-top: 26px;
 	background: 0 0;
 	position: relative;
@@ -445,7 +463,7 @@ div.item-label {
 	-o-transform: skew(-15deg);
 	-moz-transform: skew(-15deg);
 	-webkit-transform: skew(-15deg);
-}
+} */
 
 /* □■-----------------------------------------------------
 / 『見出し（h5）』
@@ -471,8 +489,8 @@ div.item-label {
 		135deg,
 		#333333 0%,
 		#333333 50%,
-		#1b7c26 50%,
-		#1b7c26 100%,
+		#9da5a0 50%,
+		#9da5a0 100%,
 		transparent 0
 	);
 }
@@ -846,12 +864,12 @@ a.page-numbers:hover:after {
 	background-color: #333333;
 }
 .toc a {
-	color: #043e0d;
+	color: #333333;
 }
 
 .toc-content ul li a:hover,
 .toc-content ol li a:hover {
-	background-color: #94a4a5;
+	background-color: #9da5a0;
 }
 
 .toc a:hover {
@@ -882,7 +900,7 @@ a.page-numbers:hover:after {
 .toc ul li a,
 .toc ol li a {
 	display: block;
-	border-bottom: 1px solid #94a4a5;
+	border-bottom: 1px solid #9da5a0;
 	margin-left: -30px;
 	padding-left: 2em;
 }
@@ -896,6 +914,43 @@ a.page-numbers:hover:after {
 -----------------------------------------------------■□ */
 blockquote {
 	position: relative;
+	padding: 35px 15px 10px 15px;
+	box-sizing: border-box;
+	font-style: italic;
+	background: #e9e9e9;
+	color: #555555;
+	border-left: 4px solid #333333;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+blockquote:before {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	content: "\f10d";
+	font-family: "Font Awesome 5 Free";
+	color: #333333;
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 900;
+}
+
+blockquote p {
+	padding: 0;
+	margin: 7px 0;
+	line-height: 1.7;
+}
+
+blockquote cite {
+	display: block;
+	text-align: right;
+	color: #333333;
+	font-size: 0.9em;
+}
+
+/* blockquote {
+	position: relative;
 	padding: 7px 16px;
 	box-sizing: border-box;
 	font-style: italic;
@@ -905,7 +960,6 @@ blockquote {
 	background-color: rgba(8, 140, 192, 0.06);
 	margin: 1.4em 0.5em;
 }
-
 blockquote:before {
 	display: inline-block;
 	position: absolute;
@@ -923,7 +977,6 @@ blockquote:before {
 	font-size: 22px;
 	font-weight: 900;
 }
-
 blockquote:after {
 	display: inline-block;
 	position: absolute;
@@ -941,7 +994,6 @@ blockquote:after {
 	font-size: 22px;
 	font-weight: 900;
 }
-
 blockquote p {
 	padding: 0;
 	margin: 10px 0;
@@ -953,7 +1005,7 @@ blockquote cite {
 	text-align: right;
 	color: #888888;
 	font-size: 0.9em;
-}
+} */
 
 /* □■-----------------------------------------------------
 / 『カレンダー』
@@ -998,7 +1050,7 @@ table td,
 
 table th,
 .scrollable-table th {
-	background-color: #1b7c26;
+	background-color: #333333;
 	color: #9da5a0;
 }
 
@@ -1013,7 +1065,7 @@ table tr:nth-of-type(2n) {
 /* □■-----------------------------------------------------
 / 『モバイルメニュー』
 -----------------------------------------------------■□ */
-.mobile-header-menu-buttons.mobile-menu-buttons > li:nth-of-type(3n + 1),
+/* .mobile-header-menu-buttons.mobile-menu-buttons > li:nth-of-type(3n + 1),
 .mobile-footer-menu-buttons.mobile-menu-buttons > li:nth-of-type(3n + 1) {
 	background-color: #e9e9e9;
 	color: #333333;
@@ -1027,9 +1079,8 @@ table tr:nth-of-type(2n) {
 .mobile-footer-menu-buttons.mobile-menu-buttons > li:nth-of-type(3n + 3) {
 	background-color: #e9e9e9;
 	color: #333333;
-}
-/*不具合のため保留*/
-/* .mobile-header-menu-buttons.mobile-menu-buttons > li:nth-of-type(3n + 3) {
+} */
+.mobile-header-menu-buttons.mobile-menu-buttons > li:nth-of-type(3n + 1) {
 	background-color: #333333;
 	color: #e9e9e9;
 }
@@ -1044,12 +1095,12 @@ table tr:nth-of-type(2n) {
 .mobile-footer-menu-buttons.mobile-menu-buttons > li {
 	background-color: #e9e9e9;
 	color: #333333;
-} */
+}
 
 .menu-drawer a {
 	background-color: #333333;
-	color: #9da5a0;
-	border-bottom: 1px solid #212f35;
+	color: #e9e9e9;
+	border-bottom: 1px solid #222222;
 	margin-bottom: 2px;
 }
 
@@ -1096,7 +1147,7 @@ table tr:nth-of-type(2n) {
 -----------------------------------------------------■□ */
 .footer-bottom.fnm-text-width .menu-footer li a:hover {
 	background: none;
-	background-color: #333333;
+	background-color: #9da5a0;
 	color: #e9e9e9;
 }
 
@@ -1123,7 +1174,7 @@ table tr:nth-of-type(2n) {
 }
 
 .author-thumb img {
-	border: 3px solid #1b7c26;
+	border: 3px solid #333333;
 }
 
 /* □■-----------------------------------------------------
