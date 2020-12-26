@@ -1,29 +1,6 @@
 /************************************
 ** トップページカスタマイズ
 ************************************/
-/* .home #main h1 {
-	font-size: 1em;
-	color: #555;
-	letter-spacing: 1px;
-	margin: 1em 0 -2em;
-	font-weight: 400;
-	display: flex;
-	align-items: center;
-}
-.home #main h1:before,
-.home #main h1:after {
-	content: "";
-	flex-grow: 1;
-	height: 1px;
-	background: #aaa;
-	display: block;
-}
-.home #main h1:before {
-	margin-right: 0.4em;
-}
-.home #main h1:after {
-	margin-left: 0.4em;
-} */
 .home #main .large-thumb {
 	display: -webkit-box;
 	display: -ms-flexbox;
