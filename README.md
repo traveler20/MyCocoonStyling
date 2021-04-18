@@ -2,78 +2,100 @@
 自サイトのCocoonをカスタマイズしています。
 
 
-# 主な編集内容
- 『グローバルメニュー』
+主な編集内容
 
- 『エントリーカード』
+## グローバルメニュー
 
- 『ブログカード』
+## エントリーカード
 
- 『投稿ナビ』
+## ブログカード
 
- 『見出し（h2）』
+## 投稿ナビ
 
- 『見出し（h3）』
+## 見出し（h2）
 
- 『見出し（h4）』
+## 見出し（h3）
 
- 『見出し（h5）』
+## 見出し（h4）
 
- 『見出し（h6）』
+## 見出し（h5）
 
- 『サイドバーの見出し（h3）』
+## 見出し（h6）
 
-   サイドバーの見出し
- 
-   サイドバー追尾目次
-  
- 『ウィジェット／カルーセル』
+## サイドバーの見出し（h3）
 
- 『入力系』
+### サイドバーの見出し
 
- 『ページネーション／マルチページ／送信ボタン系』
+### サイドバー追尾目次
 
- 『目次』
+## ウィジェット／カルーセル
 
- 『引用』
+## 入力系
 
- 『カレンダー』
+## ページネーション／マルチページ／送信ボタン系
 
- 『テーブル』
+## 目次
 
- 『モバイルメニュー』
+## 引用
 
- 『モバイル用送信系ボタン』
+## カレンダー
 
- 『TOPへ戻る』ボタン
+## テーブル
 
- 『フッター』
+## モバイルメニュー
 
- 『プロフィール』
+## モバイル用送信系ボタン
 
- 『プロフィールのSNSボタン』
- twitter 
- feedly 
- rss 
- facebook 
- line 
- instagram 
- youtube 
- pinterest 
- note 
- hatebu 
- website 
- google-plus 
- linkedin 
- flickr 
- amazon 
- rakuten-room 
- slack 
- github 
- codepen 
- soundcloud 
- pocket 
+## 『TOPへ戻る』ボタン
 
- Font Awesome5用 
+## フッター
 
- カテゴリーリスト 
+## プロフィール
+
+## プロフィールのSNSボタン
+
+### twitter 
+
+### feedly 
+
+### rss 
+
+### facebook 
+
+### line 
+
+### instagram 
+
+### youtube 
+
+### pinterest 
+
+### note 
+
+### hatebu 
+
+### website 
+
+### google-plus 
+
+### linkedin 
+
+### flickr 
+
+### amazon 
+
+### rakuten-room 
+
+### slack 
+
+### github 
+
+### codepen 
+
+### soundcloud 
+
+### pocket 
+
+## Font Awesome5用 
+
+## カテゴリーリスト 
