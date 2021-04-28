@@ -498,21 +498,8 @@ div.item-label {
 /* □■-----------------------------------------------------
 / 『サイドバーの見出し（h3）』
 -----------------------------------------------------■□ */
-/************************************
- **サイドバーの見出し
- ************************************/
-/* .sidebar h3 {
-	background-image: repeating-linear-gradient(
-		90deg,
-		rgba(27, 124, 38, 0.3) 0%,
-		rgba(27, 124, 38, 0.3) 50%,
-		rgba(57, 188, 128, 0.3) 50%,
-		rgba(57, 188, 128, 0.3) 100%
-	);
-	color: black;
-} */
-/*
- **サイドバーそのものの変更
+/*----------------------------------
+/* サイドバーの見出し
  */
 .sidebar h3 {
 	background: none;
@@ -548,9 +535,9 @@ div.item-label {
 	left: unset;
 }
 
-/************************************
-  * サイドバー追尾目次
-  ************************************/
+/*----------------------------------
+/* サイドバー追尾目次
+ */
 .sidebar-scroll {
 	top: 15px !important;
 }
@@ -902,6 +889,136 @@ a.page-numbers:hover:after {
 .toc ol {
 	margin: 0px 0px 0px 4px;
 }
+
+/* □■-----------------------------------------------------
+/ 『アイコンボックス』
+-----------------------------------------------------■□ */
+.is-style-information-box,
+.information-box,
+.information {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-information-box::before,
+.information-box::before,
+.information::before {
+	color: #4fc3f7;
+	border: #4fc3f7;
+}
+
+.is-style-question-box,
+.question-box,
+.question {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-question-box::before,
+.question-box::before,
+.question::before {
+	color: #ffca28;
+	border: #ffca28;
+}
+
+.is-style-alert-box,
+.alert-box,
+.alert {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-alert-box::before,
+.alert-box::before,
+.alert::before {
+	color: #ff7043;
+	border: #ff7043;
+}
+
+.is-style-memo-box,
+.memo-box {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-memo-box::before,
+.memo-box::before {
+	color: #333;
+	border: #333;
+}
+
+.is-style-comment-box,
+.comment-box {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-comment-box::before,
+.comment-box::before {
+	color: #90a4ae;
+	border: #90a4ae;
+}
+
+.is-style-profile-box,
+.profile-box {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-profile-box::before,
+.profile-box::before {
+	color: #7986cb;
+	border: #7986cb;
+}
+
+.is-style-ok-box,
+.ok-box {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-ok-box::before,
+.ok-box::before {
+	color: #26c6da;
+	border: #26c6da;
+}
+
+.is-style-ng-box,
+.ng-box {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-ng-box::before,
+.ng-box::before {
+	color: #ef5350;
+	border: #ef5350;
+}
+
+.is-style-good-box,
+.good-box {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-good-box::before,
+.good-box::before {
+	color: #4db6ac;
+	border: #4db6ac;
+}
+
+.is-style-bad-box,
+.bad-box {
+	background: rgba(51, 51, 51, 0.1);
+	border-color: #333333;
+}
+
+.is-style-bad-box::before,
+.bad-box::before {
+	color: #ee6e73;
+	border: #ee6e73;
+}
+
 /* □■-----------------------------------------------------
 / 『引用』
 -----------------------------------------------------■□ */
